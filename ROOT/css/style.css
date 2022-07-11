@@ -176,8 +176,6 @@ main h1 {
  	.header{
  		display: flex;
  		flex-direction: column;
-
-
  	}
 
  	.grid-layout{	
@@ -190,6 +188,17 @@ main h1 {
 	margin: 500px auto 200px;
 	
 	padding: 0px;
+}
+.box_servicio{
+		display: grid;
+		gap: 10px;
+		grid-template-areas:
+		"header"
+		"navbar"
+		"main"
+		"footer";
+
+
 }
 
 
