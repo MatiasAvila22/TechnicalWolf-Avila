@@ -81,6 +81,30 @@ body{
 	padding: 20px;
 }
 
+.btn-base{
+	text-decoration: none;
+	padding: 5px 10px;
+	border-radius:10px;
+	font-size: $fontMedium;
+	color: $color-secundario;
+}
+
+.btn-box1{
+	@extend .btn-base;
+	background-color: #011C26;
+}
+
+.btn-box2{
+	@extend .btn-base;
+	background-color: #011C26;
+}
+
+.btn-box3{
+	@extend .btn-base;
+	background-color: #011C26;
+
+}
+
 .grid-layout{	
 	display: grid;
 	grid-template-columns: repeat(3,1fr);
@@ -109,6 +133,23 @@ body{
 			margin-bottom: 0;
 		}
 }
+
+$redesSociales:(
+	whatsapp: lightgreen,
+	instagram: #c92d8f,
+);
+
+@each $nombre, $color in $redesSociales{
+	.link-#{$nombre}{
+		margin: 0 5px;
+		padding: 5px;
+		border-radius:10px;
+		color: black;
+		text-decoration: none;
+		background-color:$color;
+	}
+}
+
 /*nosotros.html*/
 .box1_nosotros {
 	background-color: $color-principal;
@@ -225,3 +266,4 @@ main h1 {
 		flex-direction: column;	
 	}
 }
+
