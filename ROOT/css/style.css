@@ -50,10 +50,12 @@ body {
   margin-right: 10px;
 }
 
-/* line 46, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
+/*MIXINS*/
+/* line 63, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
 .box1 {
   background-color: #03738C;
   margin: 50px;
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -61,41 +63,49 @@ body {
   padding: 10px;
 }
 
-/* line 54, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
+/* line 57, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
 .box1 img {
   width: 300px;
   height: 200px;
 }
 
-/* line 60, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
+/* line 67, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
 .box2 {
   background-color: #03738C;
   margin: 50px;
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding: 10px;
 }
 
-/* line 68, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
+/* line 57, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
 .box2 img {
   width: 300px;
   height: 200px;
 }
 
-/* line 74, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
+/* line 71, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
 .box3 {
   background-color: #03738C;
   margin: 50px;
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding: 10px;
 }
 
-/* line 84, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
+/* line 57, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
+.box3 img {
+  width: 300px;
+  height: 200px;
+}
+
+/* line 75, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
 .btn-base, .btn-box1, .btn-box2, .btn-box3 {
   text-decoration: none;
   padding: 5px 10px;
@@ -104,22 +114,23 @@ body {
   color: #DFF5EA;
 }
 
-/* line 92, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
+/*EXTEND*/
+/* line 84, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
 .btn-box1 {
   background-color: #011C26;
 }
 
-/* line 97, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
+/* line 89, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
 .btn-box2 {
   background-color: #011C26;
 }
 
-/* line 102, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
+/* line 94, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
 .btn-box3 {
   background-color: #011C26;
 }
 
-/* line 108, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
+/* line 100, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
 .grid-layout {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -129,34 +140,34 @@ body {
   padding: 0px;
 }
 
-/* line 117, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
+/* line 109, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
 .footer {
   background-color: #03738C;
-  margin: 0px 0px;
+  margin: 0;
   padding: 0px 0px;
 }
 
-/* line 121, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
+/* line 113, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
 .footer b {
   display: inline-block;
   padding-top: 10px;
   padding-left: 15px;
 }
 
-/* line 126, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
+/* line 118, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
 .footer h2 {
   display: inline-block;
   padding-top: 10px;
   padding-left: 15px;
 }
 
-/* line 131, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
+/* line 123, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
 .footer p {
   color: #DFF5EA;
   margin-bottom: 0;
 }
 
-/* line 143, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
+/* line 135, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
 .link-whatsapp {
   margin: 0 5px;
   padding: 5px;
@@ -166,7 +177,7 @@ body {
   background-color: lightgreen;
 }
 
-/* line 143, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
+/* line 135, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
 .link-instagram {
   margin: 0 5px;
   padding: 5px;
@@ -177,7 +188,7 @@ body {
 }
 
 /*nosotros.html*/
-/* line 154, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
+/* line 146, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
 .box1_nosotros {
   background-color: #03738C;
   margin: 50px 230px 200px 230px;
@@ -186,7 +197,7 @@ body {
 }
 
 /*servicio.html*/
-/* line 162, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
+/* line 154, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
 .box1_servicio {
   background-color: #03738C;
   margin: 50px 230px 200px 230px;
@@ -194,7 +205,7 @@ body {
 }
 
 /*productos.html*/
-/* line 169, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
+/* line 161, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
 .box1_productos {
   background-color: #03738C;
   margin: 50px 230px 200px 230px;
@@ -202,27 +213,27 @@ body {
 }
 
 /*contacto.html*/
-/* line 176, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
-main h3 {
+/* line 168, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
+main h1 {
   background-color: #011C26;
   color: #DFF5EA;
   padding: 0px 300px 50px 300px;
 }
 
-/* line 182, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
+/* line 174, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
 .box_contacto {
   background-color: #DFF5EA;
   padding: 0px 300px 50px 300px;
 }
 
-/* line 185, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
+/* line 177, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
 .box_contacto label input {
   display: inline-block;
 }
 
-/*media queries*/
+/*MEDIA QUERIES*/
 @media (max-width: 1024px) {
-  /* line 191, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
+  /* line 183, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
   .grid-layout {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -230,7 +241,7 @@ main h3 {
 }
 
 @media (max-width: 768px) {
-  /* line 197, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
+  /* line 189, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
   .header {
     width: 100%;
     display: grid;
@@ -238,7 +249,7 @@ main h3 {
     display: flex;
     flex-direction: column;
   }
-  /* line 204, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
+  /* line 196, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
   .grid-layout {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -247,27 +258,24 @@ main h3 {
     margin: 500px auto 200px;
     padding: 0px;
   }
-  /* line 212, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
+  /* line 204, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
   .box_servicio {
     display: grid;
     gap: 10px;
-    grid-template-areas: "header"
- "navbar"
- "main"
- "footer";
+    grid-template-areas: "header" "navbar" "main" "footer";
   }
 }
 
 @media (max-width: 425px) {
-  /* line 223, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
+  /* line 215, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
   .header {
     width: 100%;
   }
-  /* line 225, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
+  /* line 217, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
   .header input {
     width: 75%;
   }
-  /* line 229, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
+  /* line 221, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
   .grid-layout {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -276,26 +284,23 @@ main h3 {
     margin: 500px auto 200px;
     padding: 0px;
   }
-  /* line 237, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
+  /* line 229, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
   body {
     display: grid;
     gap: 10px;
-    grid-template-areas: "header"
- "navbar"
- "main"
- "footer";
+    grid-template-areas: "header" "navbar" "main" "footer";
   }
 }
 
 @media (max-width: 768px) {
-  /* line 249, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
+  /* line 241, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
   .navbar__menu {
     flex-direction: row;
   }
 }
 
 @media (max-width: 375px) {
-  /* line 255, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
+  /* line 247, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
   .navbar__menu {
     display: flex;
     flex-direction: row;
@@ -304,7 +309,7 @@ main h3 {
 }
 
 @media (max-width: 320px) {
-  /* line 263, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
+  /* line 255, ../CODER -37685/clase 11/TechnicalWolf-Avila/ROOT/scss/style.scss */
   .navbar__menu {
     display: flex;
     flex-direction: row;

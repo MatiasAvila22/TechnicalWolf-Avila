@@ -43,13 +43,16 @@ body{
 	margin-right: 10px;
 }
 
-.box1{
+/*MIXINS*/
+
+@mixin box-base($alineacion, $color-principal){
 	background-color: $color-principal;
 	margin: 50px;
+	border-radius:15px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: $alineacion;
 	padding: 10px;
 	img{
 		width: 300px;
@@ -57,28 +60,16 @@ body{
 	}
 }
 
-.box2{
-	background-color: $color-principal;
-	margin: 50px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-between;
-	padding: 20px;
-	img{
-		width: 300px;
-		height: 200px;
-	}
+.box1{
+	@include box-base(space-between, #03738C);
 }
 
-.box3 {
-	background-color: $color-principal;
-	margin: 50px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-between;
-	padding: 20px;
+.box2{
+	@include box-base(space-between, #03738C);
+}
+
+.box3{
+	@include box-base(space-between, #03738C);
 }
 
 .btn-base{
@@ -88,6 +79,7 @@ body{
 	font-size: $fontMedium;
 	color: $color-secundario;
 }
+/*EXTEND*/
 
 .btn-box1{
 	@extend .btn-base;
@@ -116,7 +108,7 @@ body{
 
 .footer{
 	background-color: $color-principal;
-		margin: 0px 0px;
+		margin: 0;
 		padding: 0px 0px;
 		b{
 		display: inline-block;
@@ -186,7 +178,7 @@ main h1 {
 		display: inline-block;
 	}
 }
-/*media queries*/
+/*MEDIA QUERIES*/
 @media(max-width: 1024px){
 	.grid-layout{
 		display: grid;
