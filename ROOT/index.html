@@ -7,8 +7,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Technical Wolf| Servicio tecnico PC</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
 	
 
 	<link rel="stylesheet" href="./css/style.css">
@@ -19,28 +19,72 @@
 <body>
 	 
 	<header class="header">
+
 	 <img src="assets/logo.png" alt="Logo Technical Wolf">
 	  <input type="shearch" name="buscador" placeholder="Buscador">
     	<nav class="flex-container">
-		<ul class="navbar__menu">
+		<ul class="navbar__menu" id="linksColor">
 			<li>
-				<a href="../ROOT/index.html" class="navbar__menu-link">Inicio</a>
+				<a href="../ROOT/index.html" class="navbar__menu-link" >Inicio</a>
 			</li>
-				<a href="pages/nosotros.html" class="navbar__menu-link">Nosotros</a>
 			<li>
-				<a href="pages/servicio.html" class="navbar__menu-link">Servicio</a>
+				<a href="pages/nosotros.html" class="navbar__menu-link" >Nosotros</a>
+			</li>
+			<li>
+				<a href="pages/servicio.html" class="navbar__menu-link" >Servicio</a>
 			</li>	
 			<li>
-				<a href="pages/productos.html" class="navbar__menu-link">Productos</a>
+				<a href="pages/productos.html" class="navbar__menu-link" >Productos</a>
 			</li>
 			<li>
-				<a href="pages/contacto.html" class="navbar__menu-link">Contacto</a>
+				<a href="pages/contacto.html" class="navbar__menu-link" >Contacto</a>
 			</li>
 		</ul>
 		</nav>
 	</header>
 
 	<main>
+		<section class="carousel">
+			<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+			  <div class="carousel-indicators">
+			    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+			    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			  </div>
+			  <div class="carousel-inner">
+			    <div class="carousel-item active">
+			      <img src="./assets/carrusel1.jpg" class="d-block w-100" alt="...">
+			      <div class="carousel-caption d-none d-md-block">
+			        <h5>Somos technical wolf</h5>
+			        <p>Conocenos!.</p>
+			      </div>
+			    </div>
+			    <div class="carousel-item">
+			      <img src="./assets/carrusel2.jpg" class="d-block w-100" alt="...">
+			      <div class="carousel-caption d-none d-md-block">
+			        <h5>Instalacion de Software!</h5>
+			        <p>Hacemos instalaciones de Windows, Office, Adobe, y demas programas, consultanos!</p>
+			      </div>
+			    </div>
+			    <div class="carousel-item">
+			      <img src="./assets/carrusel3.jpg" class="d-block w-100" alt="...">
+			      <div class="carousel-caption d-none d-md-block">
+			        <h5>Servicio tecnico</h5>
+			        <p>Consultanos para armar o reparar tu computadora.</p>
+			      </div>
+			    </div>
+			  </div>
+			  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    <span class="visually-hidden">Previous</span>
+			  </button>
+			  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			    <span class="visually-hidden">Next</span>
+			  </button>
+			</div>
+		</section>
+
 	<section class="grid-layout">
 	    	<div class="box1">
 	    		<h2><a href="pages/nosotros.html" class="btn-box1">Nosotros</a></h2>
@@ -63,12 +107,15 @@
 
 	<footer class="footer">		 	
 		<b> Nos encontramos en La merced 437</b> <br>
-		<b><a href="#" class="link-whatsapp">Whatshapp</a>2213611731</b>	<br>
-		<b>seguinos en<a href="#" class="link-instagram">instagram</a></b><br>
+		<b><a href="https://web.whatsapp.com/" class="link-whatsapp">Whatshapp</a>2213611731</b>	<br>
+		<b>seguinos en<a href="https://www.instagram.com/" class="link-instagram">instagram</a></b><br>
 		<b>Horario de atencion: 08:00 a 17:00</b>	<br>
 		<h2>Llena este breve formulario y nos pondremos en contacto</h2><br>
-		<a href="pages/contacto.html"> Formulario de contacto</a> <hr />
+		<a href="pages/contacto.html" class="btn btn-dark" id="linkForm"> Formulario de contacto</a> <hr />
 		<p>© Copyright 2022-2022 Matias Avila- Todos los derechos Reservados</p>
 	</footer>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
